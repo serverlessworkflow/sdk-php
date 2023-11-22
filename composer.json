@@ -1,0 +1,34 @@
+{
+    "name": "taskvalve/serverless-workflow-php",
+    "description": "Provides the PHP API/SPI for the Serverless Workflow Specification.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Serverless\\Workflow\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Richard McDaniel",
+            "email": "richard.lee.mcdaniel@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpstan/phpstan": "^1.9",
+        "phpunit/phpunit": "^10.4",
+        "rector/rector": "^0.18.10",
+        "symplify/easy-coding-standard": "^11.1"
+    },
+    "require": {
+        "symfony/yaml": "^6.3",
+        "phpdocumentor/reflection-docblock": "^5.3",
+        "swaggest/json-schema": "^0.12.42"
+    },
+    "scripts": {
+        "rector": "vendor/bin/rector",
+        "ecs": "vendor/bin/ecs check --fix",
+        "stan": "vendor/bin/phpstan analyse src tests",
+        "test": "phpunit --testdox"
+    }
+}
