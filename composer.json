@@ -1,5 +1,5 @@
 {
-    "name": "taskvalve/serverless-workflow-php",
+    "name": "serverlessworkflow/sdk",
     "description": "Provides the PHP API/SPI for the Serverless Workflow Specification.",
     "type": "library",
     "license": "MIT",
